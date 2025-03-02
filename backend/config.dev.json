@@ -1,0 +1,19 @@
+{
+  "env": "development",
+  "server": {
+    "host": "0.0.0.0",
+    "port": "8080"
+  },
+  "database": {
+    "my_schema": {
+      "db_name": "my_schema",
+      "host": "mysql",
+      "port": "3306",
+      "user": "root",
+      "password": "root",
+      "charset": "utf8mb4",
+      "parse_time": true,
+      "loc": "Local"
+    }
+  }
+}

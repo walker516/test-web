@@ -1,0 +1,15 @@
+# Air の設定ファイル
+
+# 監視対象のルートディレクトリ
+root = "."
+tmp_dir = "tmp"
+
+# ビルド対象の Go ファイル
+[build]
+  cmd = "go build -o tmp/main ./cmd/server"
+  bin = "tmp/main"
+  exclude_dir = ["tmp", "vendor", "node_modules"]
+  include_ext = ["go", "tpl", "tmpl", "html"]
+
+[log]
+  level = "debug"
